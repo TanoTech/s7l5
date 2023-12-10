@@ -1,0 +1,21 @@
+footer {
+    color: white;
+    text-align: center;
+    background-color: #45322e;
+    padding: 3rem;
+    margin-top: 0.7rem;
+    svg {
+        width: 4rem;
+        height: 3.5rem;
+        margin-bottom: 2rem;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.742);
+            transform: scale(0.8);
+        }
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        
+    }
+}

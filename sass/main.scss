@@ -1,0 +1,60 @@
+@import 'nav';
+@import 'footer';
+@import 'modal';
+@import 'font';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #45322ed5;
+}
+
+main {
+  padding-top: 6rem;
+  @media screen and (min-width: 475px) {
+    padding-top: 10rem;
+  }
+
+  @media screen and (min-width: 970px) {
+    padding-top: 15rem;
+  }
+}
+
+.card {
+  width: 18rem;
+  border: 0;
+  box-shadow: 8px 8px 8px black;
+  
+
+  .card-img-top {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    font-size: 1rem;
+    background-color: beige;
+    border-radius: 12px;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.card-title {
+  font-size: 1.4rem;
+  height: 3.5rem;
+  overflow: hidden;
+}
+
+.card-text {
+  height: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn {
+  font-size: 1rem;
+}

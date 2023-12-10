@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backoffice</title>
+    <script src="assets/js/backoffice.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="assets/css/backoffice.css">
+</head>
+
+<body>
+
+    <header id="headIndex">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/img/logo.png"
+                        alt="logo fabbrica di Cioccolato"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="backoffice.html">Back Office</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#add">Aggiungi prodotto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#yours">I tuoi prodotti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <a id="add"></a>
+
+    <main>
+        <div id="containerSticky">
+            <h1>Aggiungi prodotto</h1>
+            <div class="container mt-5" id='addForm'>
+                <form id="productForm">
+                    <div class="mb-3">
+                        <label for="productName" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="productName" name="productName" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="productDescription" class="form-label">Descrizione:</label>
+                        <textarea class="form-control" id="productDescription" name="productDescription"
+                            required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="productImage" class="form-label">URL Immagine:</label>
+                        <input type="text" class="form-control" id="productImage" name="productImage" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="productBrand" class="form-label">Marca:</label>
+                        <input type="text" class="form-control" id="productBrand" name="productBrand" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="productPrice" class="form-label">Prezzo:</label>
+                        <input type="number" class="form-control" id="productPrice" name="productPrice" step="0.01"
+                            required>
+                    </div>
+
+                    <button type="button" class="btn btn-success" onclick="addProduct()">Aggiungi Prodotto</button>
+                    <button type="button" class="btn btn-warning" onclick="resetFormWithConfirmation()">Reset</button>
+
+                </form>
+            </div>
+        </div>
+        <a id="yours"></a>
+
+        <div id="containerScroll">
+            <h1>I tuoi prodotti</h1>
+            <div class="container mt-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Descrizione</th>
+                            <th scope="col">Marca</th>
+                            <th scope="col">Prezzo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

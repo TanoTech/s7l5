@@ -1,0 +1,45 @@
+@import 'nav';
+@import 'font';
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding-top: 3rem;
+    @media screen and (min-width: 470px ) {
+        padding-top: 7rem;
+    }
+    @media screen and (min-width: 1040px ) {
+        padding-top: 10rem;
+    }
+}
+
+#containerSticky {
+    border: 2px solid black;
+    margin-right: 2rem;
+    flex: 1 0 50%;
+    padding-bottom: 1rem;
+    h1{
+        text-align: center;
+    }
+}
+
+#containerScroll{
+    margin-top: 1rem;
+    h1{
+        text-align: center;
+    }
+}
+
+#successProduct {
+    margin-top: 1rem;
+    display: none;
+}
+
+#wrongAdd {
+    margin-top: 1rem;
+    display: none;
+}
+
+

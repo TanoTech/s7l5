@@ -1,0 +1,37 @@
+.navbar .container-fluid {
+    background-color: #45322e;
+    margin-bottom: 3rem;
+    position: fixed;
+    top: 0rem;
+    z-index: 2;
+    
+
+    img {
+        width: 10vw;
+        border: 1px solid black;
+        padding: 0;
+    }
+    a {
+        background-color: beige;
+        margin-left: 1rem;
+        border-radius: 12px;
+        padding: 1rem 4rem;
+        &:hover {
+            background-color: #45322ed5 ;
+            box-shadow: 3px 3px 3px 3px black;
+            color: white
+        }
+    }
+    .navbar-brand {
+        background-color: white;
+        box-shadow: 3px 3px 3px 3px black;
+        &:hover {
+            background-color: beige;
+        }
+    }
+}
+
+.navbar-toggler {
+    background-color: beige;
+    border: 1px solid black;
+}

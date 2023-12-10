@@ -1,0 +1,31 @@
+@import 'font';
+
+main {
+    margin: 2rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    input {
+        margin: 2rem 0
+    }
+    label {
+        margin: 0;
+    }
+    button {
+        width: 6rem;
+        margin: 1rem auto;
+    }
+}
+
+#btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    button, a{
+        margin-left: 1rem;
+    }
+}

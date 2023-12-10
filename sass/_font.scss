@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter' sans-serif;
+}
+
+.btn-primary {
+    background-color: #45322ed5;
+    border-color: #45322ed5;
+    &:hover{
+        background-color: rgba(38, 29, 28, 0.835);;
+        border-color: #45322ed5;;
+    }
+}
+
+.btn-secondary {
+    background-color: rgb(244, 245, 220);
+    color: black;
+}
